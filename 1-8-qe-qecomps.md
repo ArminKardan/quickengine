@@ -1,0 +1,2 @@
+#### QE Components (usable in `microservice` and `xwebsite` front-end)
+We have some `QE Components` that are actually `Nextjs` components and we store them in `frontend/components/qecomps`. They are usable in `microservice` and `xwebsite` blocks. We use these components as much as we can instead of building new components.

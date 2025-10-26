@@ -1,0 +1,1 @@
+It's a function that takes a number and returns a random string based on input length.
