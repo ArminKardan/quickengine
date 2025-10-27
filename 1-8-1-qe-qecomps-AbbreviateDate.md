@@ -27,7 +27,7 @@ AbbreviateDate(date: Date | number | string, z: ZType): string
 #### Goal:
 Display a formatted and localized date (`2000/01/01 14:35`) according to the user's selected language and region.
 
-#### Frontend Code (Microservice or XWebsite):
+#### Frontend Code (Admin Panel or XWebsite):
 
 ```ts
 import AbbreviateDate from '@/frontend/components/qecomps/AbbreviateDate';

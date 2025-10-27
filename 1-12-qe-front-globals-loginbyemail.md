@@ -1,12 +1,12 @@
-### `loginbyemail`: Global Email-Based Enduser Authentication (xwebsite Only)
+### `loginbyemail`: Global Email-Based Enduser Authentication (XWebsite Only)
 
-`loginbyemail` is a global front-end utility available in the `xwebsite` environment. It enables end-users to log in or sign up using their email address. A verification code is sent to the user’s email, and upon entering the correct code, the login completes.
+`loginbyemail` is a global front-end utility available in the `XWebsite` environment. It enables end-users to log in or sign up using their email address. A verification code is sent to the user’s email, and upon entering the correct code, the login completes.
 
 ---
 
 ### 🌐 Availability
 
-- **Scope**: `xwebsite` environment only  
+- **Scope**: `XWebsite` environment only  
 - **Language/Region Restrictions**: None  
 - **Verification**: Email-based code confirmation
 
@@ -27,4 +27,4 @@
 
 ```
 
-Use this utility to enable international login flows using email in `xwebsite` blocks.
+Use this utility to enable international login flows using email in `XWebsite` blocks.

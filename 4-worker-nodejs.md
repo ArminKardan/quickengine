@@ -1,7 +1,7 @@
 # `nodejs-worker` Block
 
 ## 🧩 Description
-Some tasks—such as executing system-level commands or performing distributed workloads across multiple systems—cannot be handled directly by a `microservice`. In such cases, worker blocks (e.g., `nodejs-worker`, `python-worker`, etc.) are used. These blocks receive commands and data, perform the task independently, and return the result to the system.
+Some tasks—such as executing system-level commands or performing distributed workloads across multiple systems—cannot be handled directly by a `Admin Panel`. In such cases, worker blocks (e.g., `nodejs-worker`, `python-worker`, etc.) are used. These blocks receive commands and data, perform the task independently, and return the result to the system.
 
 **Typical use cases:**
 - Running OS-level commands

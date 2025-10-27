@@ -2,7 +2,7 @@
 
 ## Overview
 
-In QE Javascript environments (`microservice`, `xwebsite` frontend  and backend, GAPI), and also `nodejs-worker` the global `nexus` object enables communication with all blocks. This integration allows javascript applications to interact together using nexus.
+In QE Javascript environments (`Admin Panel`, `XWebsite` frontend  and backend, GAPI), and also `nodejs-worker` the global `nexus` object enables communication with all blocks. This integration allows javascript applications to interact together using nexus.
 
 ## Nexus Direct
 

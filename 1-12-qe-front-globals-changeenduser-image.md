@@ -1,6 +1,6 @@
 ### `changeenduser.image`: Change Logged-In User's Image Globally
 
-This function is available only in `xwebsite` blocks. It updates the `image` field of the currently logged-in `enduser` across the entire QE ecosystem, including the QE website and all `xwebsite` instances.
+This function is available only in `XWebsite` blocks. It updates the `image` field of the currently logged-in `enduser` across the entire QE ecosystem, including the QE website and all `XWebsite` instances.
 
 ---
 
@@ -29,7 +29,7 @@ This function is available only in `xwebsite` blocks. It updates the `image` fie
 
 ### 📝 Notes
 
-- Available only in `xwebsite` blocks.
+- Available only in `XWebsite` blocks.
 - Requires the user to be logged in (`z.enduser` must be truthy).
 - The `image` value must be a valid image URL.
 - On success, `json.code === 0`; handle other responses with `log()` and `alerter()` for proper user feedback.

@@ -82,7 +82,7 @@ This call will render a random 10-character alphanumeric serial.
 
 ## Usage (Python Workers)
 
-In Python-based microservices or workers:
+In Python-based workers:
 
 ```python
 from libs.bridge import serial_generator

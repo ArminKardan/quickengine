@@ -13,14 +13,14 @@ These represent the core applications or services delivered to end users. They m
 
 
 ## GUI is mandatory
-Every project types includes of Middleware or Product should have a GUI (microservice or xwebsite block). for middleware they will be used for testing various parts of the project and for products it will be the user interface.
+Every project types includes of Middleware or Product should have a GUI (Admin Panel or XWebsite block). for middleware they will be used for testing various parts of the project and for products it will be the user interface.
 
-## Microservice or Xwebsite?
-We will use microservice as an admin pannel and.
-Microservice is recommended to be single page.
+## Admin Panel or Xwebsite?
+We will use Admin Panel as an admin pannel and.
+Admin Panel is recommended to be single page.
 Xwebsite as multiple page.
-If Product can be single page use Microservice.
-Otherwise use microservice as admin panel and xwebsite as product page.
+If Product can be single page use Admin Panel.
+Otherwise use Admin Panel as admin panel and XWebsite as product page.
 
 ## Send data from frontend to backend 
 For sending data from page's front end to the backend of the same block we use GAPI.

@@ -1,7 +1,7 @@
 
 # 🔐 `SHA256`: Front-End Hash Utility
 
-`SHA256` is a globally available function in the QE JavaScript environment (`microservice` and `xwebsite`backend and Nodejs worker) that generates a secure SHA256 hash from a given string or buffer.
+`SHA256` is a globally available function in the QE JavaScript environment (`Admin Panel` and `XWebsite`backend and Nodejs worker) that generates a secure SHA256 hash from a given string or buffer.
 
 This function is useful for securely comparing passwords and other cryptographic purposes.
 

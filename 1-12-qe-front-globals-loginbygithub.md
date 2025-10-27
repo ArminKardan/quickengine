@@ -1,12 +1,12 @@
-### `loginbyGitHub`: QE-Integrated GitHub OAuth Authentication (xwebsite Only)
+### `loginbyGitHub`: QE-Integrated GitHub OAuth Authentication (XWebsite Only)
 
-`loginbyGitHub` is a global front-end function available exclusively in the `xwebsite` environment. It enables `enduser` login using either QE credentials (if already authenticated) or [GitHub](https://github.com) OAuth as a fallback.
+`loginbyGitHub` is a global front-end function available exclusively in the `XWebsite` environment. It enables `enduser` login using either QE credentials (if already authenticated) or [GitHub](https://github.com) OAuth as a fallback.
 
 ---
 
 ### 🌐 Availability
 
-- **Scope**: `xwebsite` only  
+- **Scope**: `XWebsite` only  
 - **Primary Authentication**: QE login  
 - **Fallback Authentication**: GitHub OAuth (via QE-hosted window)  
 - **User Perspective**: GitHub sees the authentication request as coming from QE.
@@ -27,4 +27,4 @@ await loginbyGitHub();
 </b-200>
 ```
 
-Use `loginbyGitHub` in your `xwebsite` blocks to support seamless login with fallback to GitHub if the user is not already logged into QE.
+Use `loginbyGitHub` in your `XWebsite` blocks to support seamless login with fallback to GitHub if the user is not already logged into QE.

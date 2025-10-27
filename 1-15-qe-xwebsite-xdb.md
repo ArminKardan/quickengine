@@ -1,10 +1,10 @@
 #### User Database on Javascript Blocks
 
-Here is the document for using **User database** in `GAPI` and `Page backend` only on `xwebsite` block.
+Here is the document for using **User database** in `GAPI` and `Page backend` only on `XWebsite` block.
 
 > It's fully compatible with the Node.js MongoDB driver.
 
-> It's accessible with the `xdb` global object only on `xwebsite` server side.
+> It's accessible with the `xdb` global object only on `XWebsite` server side.
 
 ---
 

@@ -1,6 +1,6 @@
 
 #### Custom Tags:
-- In `microservice` and `xwebsite` front-end e have some `custom tags` that are actually custom HTML tags and they are fully defined on `global.css` and we use them for building our fully customized apps. here is the custom tags list:
+- In `Admin Panel` and `XWebsite` front-end e have some `custom tags` that are actually custom HTML tags and they are fully defined on `global.css` and we use them for building our fully customized apps. here is the custom tags list:
 
 ##### Button custom tags:
 - `b-100`: it is a button with `height: 30px`, it's `display: flex` and `min-width: 100px`

@@ -59,7 +59,6 @@ const Page: PageEl = (props, refresh, getProps, onLoad, onConnected, dies, isFro
       title='ورود شماره تماس'
       title2='لطفا شماره تماس خود را وارد کنید'
       explain={"۱: " + "لطفا شماره تماس خود را به دقت وارد نمایید."}
-      countryitemclass={`flex min-h-[40px] rounded-md items-center bg-[#84B780] hover:bg-[#83BF7F] active:bg-[#79B075] m-1 cursor-pointer`}
       clist={{ title: z.lang.selcountry, title2: z.lang.searchccodes }}
       on={async (json) => { console.log(json); refresh({ form: null }) }}
       onclose={() => { refresh({ form: null }) }}

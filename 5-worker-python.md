@@ -3,7 +3,7 @@
 
 ## Overview
 
-The `python-worker` block in QE is designed for executing specialized or distributed tasks that are not feasible directly via a `microservice`. This includes scenarios such as running OS-level commands, managing hardware interfaces, or balancing workloads across multiple systems. The worker processes the command and returns the results.
+The `python-worker` block in QE is designed for executing specialized or distributed tasks that are not feasible directly via a `Admin Panel`. This includes scenarios such as running OS-level commands, managing hardware interfaces, or balancing workloads across multiple systems. The worker processes the command and returns the results.
 
 ---
 

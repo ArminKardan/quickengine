@@ -1,12 +1,12 @@
-### `loginbyphone`: Iranian Phone-Based Enduser Authentication (xwebsite Only)
+### `loginbyphone`: Iranian Phone-Based Enduser Authentication (XWebsite Only)
 
-`loginbyphone` is a global front-end utility available only within `xwebsite` blocks. It opens a floating window that allows end-users to log in or sign up using an Iranian mobile phone number.
+`loginbyphone` is a global front-end utility available only within `XWebsite` blocks. It opens a floating window that allows end-users to log in or sign up using an Iranian mobile phone number.
 
 ---
 
 ### 🌐 Availability
 
-- **Scope**: `xwebsite` environment only  
+- **Scope**: `XWebsite` environment only  
 - **Language**: Persian  
 - **Phone Support**: Iranian mobile numbers only
 
@@ -26,4 +26,4 @@
 </b-200>
 ```
 
-Use this utility to enable localized login flows for Iranian users in Persian-language `xwebsite` applications.
+Use this utility to enable localized login flows for Iranian users in Persian-language `XWebsite` applications.

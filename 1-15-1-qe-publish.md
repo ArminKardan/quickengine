@@ -6,7 +6,7 @@ Before publishing, ensure your project is fully functional in development mode. 
 
 ## ✅ Step 1: Test in Development Mode
 
-Run all blocks (`microservice`, `xwebsite`, and all `workers`) in development mode and verify their functionality.
+Run all blocks (`Admin Panel`, `XWebsite`, and all `workers`) in development mode and verify their functionality.
 
 ---
 

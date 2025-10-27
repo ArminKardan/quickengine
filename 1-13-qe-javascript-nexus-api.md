@@ -11,7 +11,7 @@ Here we are explaining how to send Nexus API requests to the workers and how to 
 
 
 To interact with a Nexus worker, you must know the **Explore app name** (i.e., the name of the project to which the worker belongs). 
-> Sending Nexus API has common method in all QE Javascript environments (`microservice`, `xwebsite` frontend and backend) and `nodejs-worker`.
+> Sending Nexus API has common method in all QE Javascript environments (`Admin Panel`, `XWebsite` frontend and backend) and `nodejs-worker`.
 
 
 

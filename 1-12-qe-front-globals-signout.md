@@ -1,6 +1,6 @@
-### `signout`: Enduser Sign-Out Utility (xwebsite Only)
+### `signout`: Enduser Sign-Out Utility (XWebsite Only)
 
-The `signout` function is a global front-end utility available **only within `xwebsite` blocks**. It logs out the current `enduser` session.
+The `signout` function is a global front-end utility available **only within `XWebsite` blocks**. It logs out the current `enduser` session.
 
 ---
 

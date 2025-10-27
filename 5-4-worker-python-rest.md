@@ -8,7 +8,7 @@ In the QE system, `python-worker` supports exposing REST endpoints using a built
 This capability is helpful when:
 - Exposing diagnostic or control endpoints
 - Accepting data from other QE components or external tools
-- Running microservice-like REST interfaces inside a worker process
+- Running Admin Panel-like REST interfaces inside a worker process
 
 > Note: This REST interface is separate from the internal **Nexus API**. The Nexus API is handled by `App.api` and `App.xmpp.onapi`, not `App.rest`.
 

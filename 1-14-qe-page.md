@@ -1,6 +1,6 @@
 # QE Page Structure
 
-In QE, both `microservice` and `xwebsite` projects support multilingual page rendering and user-aware session handling. Each page is built using a unified structure with front-end and back-end components.
+In QE, both `Admin Panel` and `XWebsite` projects support multilingual page rendering and user-aware session handling. Each page is built using a unified structure with front-end and back-end components.
 
 ---
 
@@ -13,8 +13,8 @@ Each language-specific page is located at:
 ```
 
 - `[lang]` represents the selected language of the user:
-  - For `microservice`, it's the `middleuser`'s language.
-  - For `xwebsite`, it's the `enduser`'s language.
+  - For `Admin Panel`, it's the `middleuser`'s language.
+  - For `XWebsite`, it's the `enduser`'s language.
 
 ---
 

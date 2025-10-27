@@ -1,25 +1,96 @@
 
-# QE XWebsite
+# QE Admin Panel
 
-**XWebsite** is a customizable multi-page website (based on Customized-Next.js), typically hosted on a subdomain of [QE Website](https://qepal.com) or a custom domain. It's designed for end-user interaction—especially those unfamiliar with QE—while depending on QE only for back-end infrastructure.
+**QE Admin Panel** is a lightweight, single-page admin panel built on [QE Customized Next.js]() and embedded via iframe into the [QE Website](https://qepal.com). It's used for simplified GUI control of project systems.
 
-Note:
 
-### Server-side Features (Page Backend & GAPI)
-- Access to both `udb` (Universal DB) and `xdb` (User DB)
-- Supports `Nexus-API Send`, `Nexus-Direct Send`, `Nexus-Channel Send`
-- Frontend supports: `Nexus-API Send`, `Nexus-Direct Send`, `Nexus-Channel Send`, `Nexus-Channel Receive`
 
-### Frontend Capabilities
-Supports all QE Components, custom tags, and global functions, including login and user-profile functions.
+## 📁 Page File Location
+
+Each language-specific page is located at:
+
+```
+./pages/[lang]/index.tsx
+```
+
+- `[lang]` represents the selected language of the user:
+  - For `Admin Panel`, it's the `middleuser`'s language.
+  - For `XWebsite`, it's the `enduser`'s language.
 
 ---
 
-### XWebsite Page components:
-We shouldn't recreate components if we need to do some tasks except it's component doesn't exists. It's because of integrity in QE echosystem. Instead we use below components to design XWebsite Pages:
+## 🧱 Minimum Page Template
 
-These are reusable UI utilities designed to reduce redundancy and provide consistent UX:
+Below is the **minimum boilerplate** to define a valid QE page:
 
+```tsx
+
+import Component, { PageEl } from '@/frontend/components/qecomps/Component'
+import Window from '@/frontend/components/qecomps/Window';
+import type { GetServerSideProps, GetServerSidePropsContext } from 'next';
+import Router from 'next/router'
+
+export default p => Component(p, Page);
+const Page: PageEl = (props: {} & { [key: string]: any }, refresh, getProps, onLoad, onConnected, dies, isFront, z) => {
+
+  onLoad(async ()=>{ //when component/page loads
+
+  })
+
+  getProps(async (isFront) => { //should be used only when SEO doesn't needed.
+
+  })
+
+  dies(async ()=>{// when page/component dies
+
+  })
+
+  onConnected(async () => { //when nexus is connected on page
+    console.log("connected.")
+  })
+
+  return <div style={{ direction: z.lang.dir, padding: 10 }}>
+
+    <Window title='hi' contentStyle={{ padding: 10 }}>
+
+    </Window>
+
+  </div>
+}
+
+
+export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
+
+  var session = await ((await import('@/backend/SSRVerify.ts')).SSRVerify)(context, false, [])
+
+  //TODO
+
+  let obj = await Prosper({
+    props: {
+      session,
+    },
+  }, context)
+  return obj
+}
+
+```
+
+---
+
+## 🔍 Notes
+
+- `Component(p, Page)` is a QE wrapper that ensures proper lifecycle and context binding.
+- The `Page` function supports automatic props and lifecycle injection (`onLoad`, `onConnected`, `dies`, etc.).
+- The server-side `getServerSideProps` integrates:
+  - Language resolution
+  - Session verification
+  - Metadata injection 
+  - Translation keys injection from z.lang
+
+
+
+### Admin Panel Page components:
+We shouldn't recreate components if we need to do some tasks except it's component doesn't exists. It's because of integrity in QE echosystem. Instead we use below components to design Admin Panel Pages:
 
 - [AbbreviateDate](https://google.com) — If we need localized date formatting.
 - [Badge](https://google.com) — If we need: Display user privileges.
@@ -53,9 +124,8 @@ These are reusable UI utilities designed to reduce redundancy and provide consis
 - [Window](https://google.com) — If we need Primary layout containers.
 - [WindowFloat](https://google.com) — If we need Primary layout containers.
 - [ZipAndDownload](https://google.com) — Client-side ZIP file generator.
----
 
-**window (dom) available functions in QE XWebsite page and components:**
+**window (dom) available functions in QE Admin Panel page and components:**
 - [alerter](https://google.com) — If we need to show a message to the user.
 - [success](https://google.com) — If we want to show some simple task successfully done.
 - [error](https://google.com) — If we want to show some simple task successfully done.
@@ -72,21 +142,18 @@ These are reusable UI utilities designed to reduce redundancy and provide consis
 - [MD5](https://google.com) — Hash functions.
 - [SHA256](https://google.com) — Hash functions.
 - [sleep](https://google.com) — Async delay.
-- [MD5](https://google.com)  — If we need to Hash a string
-- [SHA256](https://google.com) — If we need to Hash a string
-- [udb](https://google.com) If wee need to connect to the MongoDB database of XWebsite (Available to [topuser](https://google.com)).
-- [xdb](https://google.com) If wee need to connect to the MongoDB database of XWebsite (Available to [topuser](https://google.com) and [middleuser](https://google.com)).
-
-- [loginbyQE](https://google.com) If we need enduser to login to XWebsite by QE Authentication.
-- [loginbyGoogle](https://google.com) If we need enduser to login to XWebsite by Google Authentication.
-- [loginbyLinkedIn](https://google.com) If we need enduser to login to XWebsite by LinkedIn Authentication.
-- [loginbyGitHub](https://google.com) If we need enduser to login to XWebsite by GitHub Authentication.
-- [loginbyphone](https://google.com) If we need enduser to login to XWebsite by Phone Authentication (Only works in Persian language).
-- [changeenduser.image](https://google.com) If We need to change enduser's Profile Image (Note: it will change enduser's image all accross QE Echosystem)
-- [changeenduser.name](https://google.com) If We need to change enduser's Name (Note: it will change enduser's image all accross QE Echosystem)
-- [changeenduser.unit](https://google.com) If We need to change enduser's Monetary Unit (Note: it will change enduser's image all accross QE Echosystem)
-- [changeenduser.lang](https://google.com) If We need to change enduser's Primary language (Note: it will change enduser's image all accross QE echosystem)
+- [udb](https://google.com) If wee need to connect to the MongoDB database of Admin Panel.
 
 
+###  GAPI (Fronend-Backend RestAPI communication)
+- [GAPI](https://google.com) — If we need to send/receive data with backend (for example mongodb) by RestAPI after page has been created we use GAPI system. Note that it cannot communicate with workers.
 
-it also has third party library installation capability from `npm` from QE Explore manager.
+###  Nexus Methods
+- [Nexus Find](https://google.com) — If we need to find available workers of some service.
+- [Nexus API](https://google.com) — If we need to send a message to a worker using nexus and get it's response back.
+- [Nexus API](https://google.com) — If we need to send a message to a worker using nexus and get it's response back.
+
+
+## Summary
+
+QE Admin Panel is a powerful yet minimal environment that integrates seamlessly with QE infrastructure. It leverages reusable QE components, global functions, and Nexus/UDb features to create efficient, maintainable admin tools.

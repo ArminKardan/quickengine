@@ -1,7 +1,7 @@
 
 # 🔐 `MD5`: Global Hash Utility
 
-The `MD5` function is globally available in the QE Javascript environment (`microservice` and `xwebsite`) backend and `nodejs-worker`. It computes an MD5 cryptographic hash from a given input string and returns it as a hexadecimal string.
+The `MD5` function is globally available in the QE Javascript environment (`Admin Panel` and `XWebsite`) backend and `nodejs-worker`. It computes an MD5 cryptographic hash from a given input string and returns it as a hexadecimal string.
 
 This is especially useful for comparing large strings efficiently—by comparing their hashes instead of the full text.
 

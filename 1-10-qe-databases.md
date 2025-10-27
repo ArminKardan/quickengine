@@ -23,9 +23,9 @@ In the QE system, when a new project is created by cloning an **Explore**, a **M
 
 - **Name**: `xdb`
 - **Owner**: `middleuser`
-- **Scope**: Private to the **xwebsite** block
+- **Scope**: Private to the **XWebsite** block
 - **Access**:
-  - **Back-end of xwebsite**: Direct access
+  - **Back-end of XWebsite**: Direct access
   - **Front-end**: Access only via **GAPIs**
 - **Purpose**: 
   - Designed to manage **end-user data**

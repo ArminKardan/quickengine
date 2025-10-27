@@ -2,7 +2,7 @@
 
 ## Overview
 
-In QE Javascript environments (`microservice`, `xwebsite` frontend  and backend, GAPI), and also `nodejs-worker` the global `nexus` object enables communication with all blocks. One of its features is **Channel Messaging**, a publish-subscribe model that allows applications to broadcast and receive messages across shared "channels".
+In QE Javascript environments (`Admin Panel`, `XWebsite` frontend  and backend, GAPI), and also `nodejs-worker` the global `nexus` object enables communication with all blocks. One of its features is **Channel Messaging**, a publish-subscribe model that allows applications to broadcast and receive messages across shared "channels".
 
 This is useful for real-time interactions such as logs, event updates, and state sharing among clients and services.
 

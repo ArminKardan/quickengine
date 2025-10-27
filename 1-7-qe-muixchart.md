@@ -1,7 +1,7 @@
 
 #### MUI X Charts Support
 
-The `MUI X Charts` library is pre-installed and fully supported in the QE Platform. Developers can seamlessly integrate powerful chart visualizations into their `microservice` and `xwebsite` projects.
+The `MUI X Charts` library is pre-installed and fully supported in the QE Platform. Developers can seamlessly integrate powerful chart visualizations into their `Admin Panel` and `XWebsite` projects.
 
 **Example:** The following demonstrates how to implement `PieChart`, `LineChart`, and `RadarChart` using `MUI X Charts`:
 

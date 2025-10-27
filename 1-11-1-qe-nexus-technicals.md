@@ -17,7 +17,7 @@ Every block that comes online connects to the Nexus network, enabling peer-to-pe
 When a block connects to the Nexus network, it is assigned a unique **Jabber ID (JID)** in the following format:
 
 ```
-[app]-[userUID]-[role]@qepal.com/[resource]
+[app]-[userUID]-[role]-[resource]@qepal.com/[resource]
 ```
 
 #### JID Components
@@ -39,7 +39,7 @@ If `userA` (UID: `682ebf741c055d80a4f15f8b`) creates an `explore` with `app: ete
 etest-682ebf741c055d80a4f15f8b-owner@qepal.com/default
 ```
 
-If `userB` (UID: `682ebf741c055d80a4f15f9a`) connects to this `microservice` through the frontend (not as the owner), the JID might be:
+If `userB` (UID: `682ebf741c055d80a4f15f9a`) connects to this `Admin Panel` through the frontend (not as the owner), the JID might be:
 
 ```
 etest-682ebf741c055d80a4f15f9a-user@qepal.com/webuo1561
@@ -59,13 +59,13 @@ The `resource` segment in the JID provides additional context about the origin o
 
 | Resource Prefix       | Description                                                                 | Example             |
 |------------------------|-----------------------------------------------------------------------------|---------------------|
-| `uservice[randomstr]`  | Published microservice backend                                              | `userviceCSDnsa1`   |
-| `udevelopment[randomstr]` | Development microservice backend                                         | `udevelopmentQsdE5x`|
-| `xservice[randomstr]`  | Published xwebsite backend                                                  | `xserviceRdndS5`    |
-| `xdefault[randomstr]`  | Published xwebsite backend (default variant)                                | `xdefaultRdndS5`    |
-| `xdevelopment[randomstr]` | Development xwebsite backend                                            | `xdevelopmentqWpK5s`|
-| `webuo[randomstr]`     | Development microservice frontend                                           | `webuoxsa15`        |
-| `webxo[randomstr]`     | Development xwebsite frontend                                               | `webxoCDSv`         |
+| `uservice[randomstr]`  | Published Admin Panel backend                                              | `userviceCSDnsa1`   |
+| `udevelopment[randomstr]` | Development Admin Panel backend                                         | `udevelopmentQsdE5x`|
+| `xservice[randomstr]`  | Published XWebsite backend                                                  | `xserviceRdndS5`    |
+| `xdefault[randomstr]`  | Published XWebsite backend (default variant)                                | `xdefaultRdndS5`    |
+| `xdevelopment[randomstr]` | Development XWebsite backend                                            | `xdevelopmentqWpK5s`|
+| `webuo[randomstr]`     | Development Admin Panel frontend                                           | `webuoxsa15`        |
+| `webxo[randomstr]`     | Development XWebsite frontend                                               | `webxoCDSv`         |
 | `default[randomstr]`   | Node.js worker                                                              | `defaultDksbnx7`    |
 | `pydefault[randomstr]` | Python worker                                                               | `pydefaultOWbhsd`   |
 | `godefault[randomstr]` | Golang worker                                                               | `godefaultWDSjs`    |

@@ -1,6 +1,6 @@
 # QE Rest APIs
 
-Every server-side block in QE—including `microservice` backends, `xwebsite` backends, and the [QE Website](https://qepal.com)—exposes REST APIs for control and communication. Worker blocks such as `nodejs-worker`, `python-worker`, and `golang-worker` also use REST APIs.
+Every server-side block in QE—including `Admin Panel` backends, `XWebsite` backends, and the [QE Website](https://qepal.com)—exposes REST APIs for control and communication. Worker blocks such as `nodejs-worker`, `python-worker`, and `golang-worker` also use REST APIs.
 
 Both **Nexus** and **REST API** methods are supported, each with distinct pros and cons.
 

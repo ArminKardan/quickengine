@@ -1,6 +1,6 @@
-## QE Page Microservice Backend
+## QE Page Admin Panel Backend
 
-In QE front-end environments (`microservice` and `xwebsite`), we use the `getServerSideProps` function to implement the backend for pages. This function fetches required data before rendering the page.
+In QE front-end environments (`Admin Panel` and `XWbsite`), we use the `getServerSideProps` function to implement the backend for pages. This function fetches required data before rendering the page.
 
 ### Basic Backend Setup
 
@@ -17,8 +17,8 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
     app, 
     cat, 
     expid, 
-    topuser, // Developer of the microservice
-    middleuser, // User in the microservice
+    topuser, // Developer of the Admin Panel
+    middleuser, // User in the Admin Panel
     lang, 
     path, 
     pageid, 
@@ -63,7 +63,7 @@ session : {
 
 ### `TopUserType`
 
-Represents the top-level user (developer of the microservice):
+Represents the top-level user (developer of the Admin Panel):
 
 ```ts
 TopUserType : {
@@ -81,7 +81,7 @@ TopUserType : {
 
 ### `MiddleUserType`
 
-Represents the user of the microservice:
+Represents the user of the Admin Panel:
 
 ```ts
 MiddleUserType : {

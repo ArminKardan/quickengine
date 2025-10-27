@@ -1,6 +1,6 @@
 # `z` Object Documentation
 
-The `z` object is a global utility available in the front-end environments of both `microservice` and `xwebsite` platforms. It provides access to user data, multilingual variables, styles, and other contextual information required for building dynamic interfaces.
+The `z` object is a global utility available in the front-end environments of both `Admin Panel` and `XWebsite` platforms. It provides access to user data, multilingual variables, styles, and other contextual information required for building dynamic interfaces.
 
 ## Common Properties
 
@@ -67,7 +67,7 @@ Contains limited information about the top-level owner of the service.
 
 ---
 
-### `z.enduser` (Available only on `xwebsite`)
+### `z.enduser` (Available only on `XWebsite`)
 
 Contains information about the visiting end-user.
 

@@ -1,6 +1,6 @@
 ### `changeenduser.name`: Change Logged-In User's Name Globally
 
-This function is available only in `xwebsite` blocks. It allows changing the `name` field of the currently logged-in `enduser` across the entire QE ecosystem—including the QE website and all connected `xwebsite` instances.
+This function is available only in `XWebsite` blocks. It allows changing the `name` field of the currently logged-in `enduser` across the entire QE ecosystem—including the QE website and all connected `XWebsite` instances.
 
 ---
 

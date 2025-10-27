@@ -1,15 +1,15 @@
-### `loginbyGoogle`: QE-Integrated Google OAuth Authentication (xwebsite Only)
+### `loginbyGoogle`: QE-Integrated Google OAuth Authentication (XWebsite Only)
 
-`loginbyGoogle` is a global front-end function available in the `xwebsite` environment. It facilitates logging in an `enduser` using either QE credentials (if the user is already logged in via QE) or Google OAuth.
+`loginbyGoogle` is a global front-end function available in the `XWebsite` environment. It facilitates logging in an `enduser` using either QE credentials (if the user is already logged in via QE) or Google OAuth.
 
 ---
 
 ### 🌐 Availability
 
-- **Scope**: `xwebsite` environment only  
+- **Scope**: `XWebsite` environment only  
 - **Primary Mechanism**: QE login  
 - **Fallback Mechanism**: Google OAuth (in a QE-hosted window)  
-- **User Perception**: Google will see that the login request originates from QE, not `xwebsite`.
+- **User Perception**: Google will see that the login request originates from QE, not `XWebsite`.
 
 ---
 
@@ -28,4 +28,4 @@ await loginbyGoogle();
 </b-200>
 ```
 
-Use this function in `xwebsite` blocks to provide a seamless login experience using QE credentials or fallback to Google OAuth when needed.
+Use this function in `XWebsite` blocks to provide a seamless login experience using QE credentials or fallback to Google OAuth when needed.

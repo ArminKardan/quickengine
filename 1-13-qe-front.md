@@ -1,7 +1,7 @@
 
 ### 📄 `props` and Lifecycle Functions in QE Frontend
 
-In QE-based frontend development (used in `microservice` and `xwebsite`), the `Page` function receives several parameters that help manage component state, lifecycle, and rendering behavior:
+In QE-based frontend development (used in `Admin Panel` and `XWebsite`), the `Page` function receives several parameters that help manage component state, lifecycle, and rendering behavior:
 
 ```tsx
 const Page: PageEl = (
