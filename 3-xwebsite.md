@@ -1,7 +1,7 @@
 
 # QE XWebsite
 
-**XWebsite** is a customizable multi-page website (based on Customized-Next.js), typically hosted on a subdomain of [QE Website](https://qepal.com) or a custom domain. It's designed for end-user interaction—especially those unfamiliar with QE—while depending on QE only for back-end infrastructure.
+**XWebsite** is a customizable multi-page website (based on Customized-Next.js), typically hosted on a subdomain of [QE Website](https://qepal.com/docs/3-xwebsite) or a custom domain. It's designed for end-user interaction—especially those unfamiliar with QE—while depending on QE only for back-end infrastructure.
 
 Note:
 
