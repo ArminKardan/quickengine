@@ -1,53 +1,34 @@
 
-# QE XWebsite
+# QE Admin Panel
 
-**XWebsite** is a customizable multi-page website (based on Customized-Next.js), typically hosted on a subdomain of [QE Website](https://qepal.com) or a custom domain. It's designed for end-user interaction—especially those unfamiliar with QE—while depending on QE only for back-end infrastructure.
+**QE Admin Panel** is a lightweight, single-page admin panel built on [QE Customized Next.js]() and embedded via iframe into the [QE Website](https://qepal.com). It's used for simplified GUI control of project systems.
 
-### Pre-Installed Libraries:
-Below libraries are pre-installed on all our XWebsite blocks are are ready and recommended to use over other similar libraries (if they are needed).
-- [Tailwind](https://tailwindcss.com/)
-- [Framer Motion](https://motion.dev/)
-- [Iconify/Tailwind](https://iconify.design/docs/usage/css/tailwind/)
-- [Daisy UI](https://daisyui.com)
-- [Tailwind Merge](https://www.npmjs.com/package/tailwind-merge)
-- [MUI Charts](https://mui.com/x/react-charts/)
-- [AES256](https://www.npmjs.com/package/aes256)
-- [Authenticator](https://www.npmjs.com/package/authenticator)
-- [Google APIs](https://www.npmjs.com/package/googleapis)
-- [Lottie React](https://www.npmjs.com/package/lottie-react)
-- [Lucide React](https://www.npmjs.com/package/lucide-react)
-- [Minimatch](https://www.npmjs.com/package/minimatch)
-- [Node Schedule](https://www.npmjs.com/package/node-schedule)
-- [Pako](https://www.npmjs.com/package/pako)
-- [QRcode](https://www.npmjs.com/package/qrcode)
-- [Sharp](https://www.npmjs.com/package/sharp)
-- [Slugify](https://www.npmjs.com/package/slugify)
-- [Streamifier](https://www.npmjs.com/package/streamifier)
-- [Superagent](https://www.npmjs.com/package/superagent)
-- [Superagent-proxy](https://www.npmjs.com/package/superagent-proxy)
-- [Svg-captcha](https://www.npmjs.com/package/svg-captcha)
-- [URL Loader](https://www.npmjs.com/package/url-loader)
-- [UUID](https://www.npmjs.com/package/uuid)
-- [Web3](https://www.npmjs.com/package/uuid)
-- [Tailwind/PostCSS](https://www.npmjs.com/package/@tailwindcss/postcss)
-- [Typescript](https://www.npmjs.com/package/typescript)
+## Design Rules
+Every QE Developer must obey the [Design Rules](https://qepal.com/docs/1-15-qe-design-rules.md) because of the integrity of system. 
+
+
+## Pre-Installed Libraries
+[Admin Panel Pre-Installed npm libraries](https://qepal.com/docs/1-1-qe-adminpanel-preinstalled.md) on Admin Panel is available and it's recommended to use them over all other libraries.
+
+## Custom tags and QE components
+We use [Custom QE Tags](https://qepal.com/docs/1-9-qe-customtags.md) in GUIs as much as possible instead of normal HTML tags.
+
+
+## Quick Start examples:
+
+> Example 1: [Hello world page](https://qepal.com/docs/6-qe-examples-helloworld-page.md)
+
+> Example 2: [Hello world component](https://qepal.com/docs/6-qe-examples-helloworld-component.md)
 
 
 
-### Server-side Features (Page Backend & GAPI)
-- Access to both [udb](https://qepal.com/docs/1-15-qe-nodejs-udb.md) (Universal DB) and [xdb](https://qepal.com/docs/1-15-qe-xwebsite-xdb.md) (User DB)
-- Supports `Nexus-API Send`, `Nexus-Direct Send`, `Nexus-Channel Send`
-- Frontend supports: `Nexus-API Send`, `Nexus-Direct Send`, `Nexus-Channel Send`, `Nexus-Channel Receive`
-
-### Frontend Capabilities
-Supports all QE Components, custom tags, and global functions, including login and user-profile functions.
 
 ---
 
-### XWebsite Page components:
-We shouldn't recreate components if we need to do some tasks except it's component doesn't exists. It's because of integrity in QE echosystem. Instead we use below components to design XWebsite Pages:
 
-These are reusable UI utilities designed to reduce redundancy and provide consistent UX:
+
+### Admin Panel ready to use components:
+We shouldn't recreate components if we need to do some tasks except it's component doesn't exists. It's because of integrity in QE echosystem. Instead we use below components to design Admin Panel Pages:
 
 
 - [AbbreviateDate](https://qepal.com/docs/1-8-1-qe-qecomps-AbbreviateDate.md) — If we need localized date formatting.
@@ -103,18 +84,24 @@ These are reusable UI utilities designed to reduce redundancy and provide consis
 - [SHA256](https://qepal.com/docs/1-12-qe-javascript-globals-sha256.md) — Hash functions.
 - [sleep](https://qepal.com/docs/1-12-qe-javascript-globals-sleep.md) — Async delay.
 - [udb](https://qepal.com/docs/1-15-qe-nodejs-udb.md) If wee need to connect to the MongoDB database of XWebsite (Available to [topuser](https://qepal.com/docs/1-15-qe-xwebsite-xdb.md).
-- [xdb](https://qepal.com/docs/1-15-qe-xwebsite-xdb.md) If wee need to connect to the MongoDB database of XWebsite (Available to [topuser](https://qepal.com/docs/) and [middleuser](https://qepal.com/docs/)).
-
-- [loginbyQE](https://qepal.com/docs/) If we need enduser to login to XWebsite by QE Authentication.
-- [loginbyGoogle](https://qepal.com/docs/) If we need enduser to login to XWebsite by Google Authentication.
-- [loginbyLinkedIn](https://qepal.com/docs/) If we need enduser to login to XWebsite by LinkedIn Authentication.
-- [loginbyGitHub](https://qepal.com/docs/) If we need enduser to login to XWebsite by GitHub Authentication.
-- [loginbyphone](https://qepal.com/docs/) If we need enduser to login to XWebsite by Phone Authentication (Only works in Persian language).
-- [changeenduser.image](https://qepal.com/docs/) If We need to change enduser's Profile Image (Note: it will change enduser's image all accross QE Echosystem)
-- [changeenduser.name](https://qepal.com/docs/) If We need to change enduser's Name (Note: it will change enduser's image all accross QE Echosystem)
-- [changeenduser.unit](https://qepal.com/docs/) If We need to change enduser's Monetary Unit (Note: it will change enduser's image all accross QE Echosystem)
-- [changeenduser.lang](https://qepal.com/docs/) If We need to change enduser's Primary language (Note: it will change enduser's image all accross QE echosystem)
 
 
+###  GAPI (Both Browser & Server Side RestAPI communication)
+- [GAPI](https://qepal.com/docs/1-15-qe-back-gapi.md) — If we need to send/receive data with backend (for example mongodb) by RestAPI after page has been created we use GAPI system. Note that it cannot communicate with workers.
 
-it also has third party library installation capability from `npm` from QE Explore manager.
+###  Nexus Methods (Both Browser & Server Side)
+- [Nexus Find](https://qepal.com/docs/1-11-qe-nexus.md) — If we need to find available workers of some service.
+- [Nexus API Send](https://qepal.com/docs/1-11-qe-nexus.md) — If we need to send a message to a worker using nexus and get it's response back.
+- [Nexus Channel Send](https://qepal.com/docs/1-11-qe-nexus.md) — If we need to send a message to a worker using nexus and get it's response back.
+
+- [Nexus Channel Receive](https://qepal.com/docs/1-11-qe-nexus.md) — If we need to send a message to a worker using nexus and get it's response back.
+
+- [Nexus Direct Send](https://qepal.com/docs/1-11-qe-nexus.md) — If we need to send a message to a QE block using their JID and resource.
+
+###  Nexus Methods (Server Side)
+- [Nexus Direct Receive](https://qepal.com/docs/1-11-qe-nexus.md) — If we need to send a message to a QE block using their JID and resource.
+
+
+## Summary
+
+QE Admin Panel is a powerful and minimal environment that integrates seamlessly with QE infrastructure. It leverages reusable QE components, global functions, and Nexus/UDb features to create efficient, maintainable admin tools.

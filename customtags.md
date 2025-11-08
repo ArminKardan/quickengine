@@ -1,8 +1,8 @@
 
-#### Custom Tags:
+# QE Custom Tags:
 - In `Admin Panel` and `XWebsite` front-end e have some `custom tags` that are actually custom HTML tags and they are fully defined on `global.css` and we use them for building our fully customized apps. here is the custom tags list:
 
-##### Button custom tags:
+## Button custom tags:
 - `b-100`: it is a button with `height: 30px`, it's `display: flex` and `min-width: 100px`
 - we also have `b-30`, `b-50`, `b-150`,`b-200`, `b-300`, `b-400` and they are different in `min-width`. their `min-width` respectively are: `30px`, `50px`, `150px`, `200px`, `300px`, `400px`.
 - the `b-[num]` that we mentioned above are useful for responsive design.
@@ -15,7 +15,7 @@ For example:
 	</div>
 	```
 	in the above code, if page's width is greater than 300px the 3 buttons will align horizontally but if page's width gets smaller they will be placed on new lines below together.
-##### Font size custom tags:
+## Font size custom tags:
 all font size custom tags that we show here has below CSS properties:
 ``` CSS
 	text-align: justify;
@@ -30,7 +30,7 @@ the custom font size tags format is like `f-[num]`, and `[num]` indicates the fo
 <b-200><f-15>Hi</f-15></b-200>
 <span><f-18>Wow im a font with 18px font-size</f-18></span>
 ```
-##### Horizontal spacing custom tags:
+## Horizontal spacing custom tags:
 Horizontal spacing custom tags are for making horizontal space between two elements. for example assume that we have two images and we need some horizontal space between them.
 The Horizontal spacing custom tags format is `sp-[num]` and `[num]` can be `1` for `10px`  , `2` for `5px` ,  `3` for `3px` or `4` for `1px`.
 Here is an example: 
@@ -49,7 +49,7 @@ Here is an example:
 ```
 
 
-##### Vertical spacing custom tags:
+## Vertical spacing custom tags:
 Vertically spacing custom tags are for making vertical space between two elements. for example assume that we have two images and we need some vertical space between them.
 The vertical spacing custom tags format is `br-[num]` and `[num]` can be `1` for `10px`  , `2` for `5px` ,  `3` for `3px` or `4` for `1px`.
 Here is an example: 
@@ -68,7 +68,7 @@ Here is an example:
 </div>
 ```
 
-##### Flex  custom tags:
+## Flex  custom tags:
 We have 3 group of useful custom tags that has `display:flex` CSS property. The format of these groups are `f-[n][m]` , `w-[n][m]` , `c-[n][m]` while `[n]` , `[m]` is parametric and depends on other CSS properties. 
 - The first group `f-[n][m]` has `flex-direction: row` .
 - The second group `w-[n][m]` has `flex-direction: row` and `flex-wrap: wrap`.

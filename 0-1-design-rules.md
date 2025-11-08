@@ -12,8 +12,8 @@ These are reusable components or services that provide supporting functionality 
 These represent the core applications or services delivered to end users. They may rely on some middleware projects to function but define the primary business logic and user-facing features.
 
 
-## GUI is mandatory
-Every project types includes of Middleware or Product should have a GUI (Admin Panel or XWebsite block). for middleware they will be used for testing various parts of the project and for products it will be the user interface.
+## No React Hooks in GUIs
+We never use react hooks until it's inevitable. developers must not use useEffect, useState, useRef instead we will use [Framer Motion](https://motion.dev/), props, refresh
 
 ## Admin Panel or Xwebsite?
 We will use Admin Panel as an admin pannel and.

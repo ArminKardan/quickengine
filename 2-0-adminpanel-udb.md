@@ -1,10 +1,4 @@
-#### Universal Database on Javascript Blocks
-
-Here is the document for using Universal database in all server-side JavaScript environments. This document is applicable to `Page backend`, `GAPI`, and `nodejs-worker`.
-
-> It's fully compatible with the Node.js MongoDB driver.
-
-> It's accessible with the `udb` global object.
+# Universal Database
 
 ---
 

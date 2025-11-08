@@ -1,5 +1,5 @@
 
-#### GAPI Files in `Admin Panel` and `XWebsite`
+#### General APIs (GAPIs) in `XWebsite`
 
 You can create backend APIs by duplicating `backend/API/ping.ts` and renaming it (e.g., `getservertime.ts`, `multiply.ts`). These APIs are accessible from frontend, backend, or externally (if published).
 
