@@ -8,14 +8,14 @@ It can build Admin Panels, Websites (With Great SEO Optimization), highly flexib
 What empowers QE and makes it unique are its **Services**, which are composed of various microservices that we call **Blocks**. On the QE website, we create a service, develop the Blocks that make it up, and then publish them. Our SaaS service is then ready.
 
 ### QE Service Design Rules
-Every QE Developer must obey the [Design Rules](https://qepal.com/docs/1-15-qe-design-rules.md) because of the integrity of system. 
+Every QE Developer must obey the [Design Rules](https://qepal.com/docs/0-1-design-rules.md) because of the integrity of system. 
 
 
 
 ### Service GUI Blocks:
    These blocks are used for having a web interface to control services.
-   - [XWebsite](https://qepal.com/docs/3-xwebsite.md) For stand-alone websites and landing pages.
-   - [Admin Panel](https://qepal.com/docs/2-adminpanel.md) For direct control of a service.
+   - [XWebsite](https://qepal.com/docs/3-0-xwebsite.md) For stand-alone websites and landing pages.
+   - [Admin Panel](https://qepal.com/docs/2-0-adminpanel.md) For direct control of a service.
 
 
 ### Worker Blocks:
