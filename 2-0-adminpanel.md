@@ -16,9 +16,9 @@ We use [Custom QE Tags](https://qepal.com/docs/1-9-qe-customtags.md) in GUIs as 
 
 ## Quick Start examples:
 
-> Example 1: [Hello world page](https://qepal.com/docs/6-qe-examples-helloworld-page.md)
+> Example 1: [Hello world page](https://qepal.com/docs/examples-helloworld-page.md)
 
-> Example 2: [Hello world component](https://qepal.com/docs/6-qe-examples-helloworld-component.md)
+> Example 2: [Hello world component](https://qepal.com/docs/examples-helloworld-component.md)
 
 
 
