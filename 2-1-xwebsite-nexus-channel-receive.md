@@ -27,7 +27,7 @@ const Page: PageEl = (props: {} & { [key: string]: any }, refresh, getProps, onL
 
 ### 💡 `specs` Object Format
 
-```ts
+```tsx
 {
   
   app: string,             // Explore app name

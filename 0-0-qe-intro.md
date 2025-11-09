@@ -20,20 +20,18 @@ Every QE Developer must obey the [Design Rules](https://qepal.com/docs/1-15-qe-d
 
 ### Worker Blocks:
    These blocks are used for processing and loadbalancing heavy process on server side or on a specific device like android or deal with hardwares and electronic modules.
-   - [Nodejs Worker](https://qepal.com/docs/4-worker-nodejs.md) for having every process that we need. 
-   - [Python Worker](https://qepal.com/docs/4-worker-nodejs.md) If there is confliction with libraries and technologies like (AI) we use python workers but it's not priority.
-   - [Android Device Manager](https://google.com) We use to control devices and hardwares like Android and use it's Sensors, features, and also control MCUs and Electronic Modules.
-   - [Android Nodejs Worker](https://google.com): If we need to have a Nodejs to be run stable on an android device.
-   - [Android Python Worker](https://google.com): If we need to have a Python to be run stable on an android device.
+   - [Nodejs Worker](https://qepal.com/docs/3-0-nodejs.md) for having every process that we need. 
+   - [Python Worker](https://qepal.com/docs/3-1-python.md) If there is confliction with libraries and technologies like (AI) we use python workers but it's not priority.
+   - [Android Device Manager](https://qepal.com/docs/3-2-android-dm.md) We use to control devices and hardwares like Android and use it's Sensors, features, and also control MCUs and Electronic Modules.
+   - [Android Nodejs Worker](https://qepal.com/docs/3-3-android-node.md): If we need to have a Nodejs to be run stable on an android device.
+   - [Android Python Worker](https://qepal.com/docs/3-4-android-python.md): If we need to have a Python to be run stable on an android device.
 
 
 ### Nexus:
    Nexus is a realtime communication system for QE echo system and it's designed and customized to be compatible with all QE blocks. each block can communicate to another one using this system. It also provides a powerful authentication and security easily for data-transferring.
 
-   - [Nexus Find](https://google.com)
-   - [Nexus API](https://google.com)
-   - [Nexus Channel](https://google.com)
-   - [Nexus Direct](https://google.com)
+   - [Nexus Description and Examples](https://qepal.com/docs/4-nexus.md)
+
 
 ### Database (MongoDB):
    MongoDB is the backbone of a QE service and It's available on the Back-end and Front-end (through GAPIs) and all workers. 

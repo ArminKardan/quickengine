@@ -85,4 +85,4 @@ Contains information about the visiting end-user.
 ## Notes
 - All user-related fields are sourced from the QE users database.
 - Language codes follow standard ISO 639-1 two-letter abbreviations.
-- `mongourl` differs between `middleuser` and `explore` context (`topuser`-owned).
+- `mongourl` differs between `middleuser` and Service context (`topuser`-owned).

@@ -1,36 +1,11 @@
-# `nodejs-worker` Block
+# NodeJS Block
+Some tasks—such as executing system-level commands or performing distributed workloads across multiple systems—cannot be handled directly by a `Admin Panel` or `XWebsite`. In such cases, worker blocks (e.g., NodeJS, [Python](https://qepal.com/docs/3-1-python.md), etc.) are used. These blocks receive commands and data, perform the task independently, and return the result to the system.
 
-## 🧩 Description
-Some tasks—such as executing system-level commands or performing distributed workloads across multiple systems—cannot be handled directly by a `Admin Panel`. In such cases, worker blocks (e.g., `nodejs-worker`, `python-worker`, etc.) are used. These blocks receive commands and data, perform the task independently, and return the result to the system.
-
-**Typical use cases:**
+## Typical use cases:
 - Running OS-level commands
 - Load-balanced processing across multiple systems
 
-## 🚀 How to Start
-
-1. **Project Setup**  
-   After a `topuser` creates a project, they can download its development files.
-
-2. **Initialize Manager**  
-   Extract the files and run:
-   ```bash
-   yarn manager
-   ```
-
-3. **Open Explore Settings**  
-   In the QE Explore interface, navigate to the **Settings** tab.
-
-4. **Locate Worker Blocks**  
-   You’ll see multiple entries like `w[app]` with a Node.js icon. For example, if your app is called `test`, look for `wtest`.
-
-5. **Open VS Code**  
-   Click the blue `vscode` icon in Explore Settings. If `yarn manager` is working correctly, VS Code should launch in the project directory.
-
-6. **Edit the Worker Script**  
-   In VS Code, open the `w[app]` folder and then `run.ts`.
-
-7. **Minimum Working Example**  
+## Minimum Working Example 
    Here's a minimal setup to get a worker connected:
 
    ```ts
@@ -39,53 +14,35 @@ Some tasks—such as executing system-level commands or performing distributed w
        console.clear()
        await App.Init(false);
        await App.initUDB();
-
-       await App.Connect({
-           resource: process.env.RESOURCE || "default",
-           image: "/files/app/robot.webp",
-       });
-
-       console.log("[nexus] connected.");
-
+       await App.Connect({});
 
        //TODO CODES will be here
-
-       App.on("ping", async (specs) => {
-           console.log("ping request from:", specs.uid);
-           return { code: 0, pong: true };
-       });
+   
    })();
    ```
 
-8. **Start the Worker**  
-   Back in Explore Settings, click on the `w[app]` Node.js icon to run the worker locally.
-
-
 Available global functions in NodeJS worker are:
 
-- `api`
-Sending rest api request (GET/POST) with json payload.
-- `MD5`
-Gets an string or buffer and gives a MD5 hex string
-- `SHA256`
-Gets an string or buffer and gives a SHA256 hex string
-- `serialgenerator`
-Making random string by given length
-- `encryptor`
-Encrypt a string by password
-- `decryptor`
-Decrypt string using password
-- `sleep`
-Making Delay on async functions
+- [MD5](https://qepal.com/docs/javascript-globals-md5.md) — Hash functions.
+- [SHA256](https://qepal.com/docs/javascript-globals-sha256.md) — Hash functions.
+- [sleep](https://qepal.com/docs/javascript-globals-sleep.md) — Async delay.
+- [udb](https://qepal.com/docs/1-15-qe-nodejs-udb.md) Service's MongoDB Database.
+- [api](https://qepal.com/docs/back-globals-api.md) — Unified GET/POST fetcher.
+- [serialgenerator](https://qepal.com/docs/javascript-globals-serialgenerator.md) — If we need Random string generator.
+- [sleep](https://qepal.com/docs/javascript-globals-sleep.md) — Async delay.
+- [encryptor](https://qepal.com/docs/javascript-globals-encryptdecrypt.md) — If we need  Symmetric encryption.
+- [decryptor](https://qepal.com/docs/javascript-globals-encryptdecrypt.md) — If we need  Symmetric encryption.
+- [FAtoENRatio](https://qepal.com/docs/javascript-globals-FAtoENRatio.md) — If we need  Symmetric encryption.
 
-It also has built-in:
+## Examples:
 
-- Telegram library (with build-in proxy)
-
-- Internal puppeteer for browser control
-
-- built in `express` for rest API communication.
-
-- `udb` access to Universal explore database.
-
-- Third party library installation capability
+- [How to Receive a Nexus API message from NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-api-receive.md)
+- [How to Send a Nexus API message from NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-api-send.md)
+- [How to Receive Data from a Nexus Channel by a NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-chennel-receive.md)
+- [How to Send Data to a Nexus Channel in NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-channel-send.md)
+- [How to Receive Data using Nexus Direct by a NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-direct-receive.md)
+- [How to Send Data to a Nexus Direct in NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-direct-send.md)
+- [How to Find Workers using Nexus Find in a NodeJS worker](https://qepal.com/docs/3-0-nodejs-nexus-find.md)
+- [How to access Service Database (udb)](https://qepal.com/3-0-nodejs-udb.md)
+- [How to start a RestAPI Server in a NodeJS worker](https://qepal.com/docs/3-0-nodejs-rest-server.md)
+- [How to upload files using NodeJS worker](https://qepal.com/docs/3-0-nodejs-uploader.md)

@@ -11,10 +11,13 @@ import { App } from './libs/bridge';
     await App.initUDB(); //optional
     await App.Connect({public:true}) //connect the worker
 
-    App.on("samplecmd", async (specs) => {
-        return { code: 0, myvalue:"Hi from NodeJS worker!" }
+    App.on("samplecmd", async specs=>{
+        let {app, body, resource, servid, servsecret, uid} = specs;
+        console.log(specs)
+        return { code: 0, myvalue:"Hi from NodeJS worker!" } 
     })
 
 })();
 
 ```
+

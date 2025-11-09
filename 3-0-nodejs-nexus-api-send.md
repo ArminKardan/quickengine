@@ -18,6 +18,7 @@ import { App } from './libs/bridge';
 ```
 
 
+
 # Send Nexus API request + Data to a built-in QE app from NodeJS worker:
 Here we send an api ping request to `eagents` from front-end of a [NodeJS Worker](https://qepal.com/docs/4-worker-nodejs.md) block.
 
